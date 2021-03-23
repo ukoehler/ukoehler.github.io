@@ -1,0 +1,66 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+h2.header {
+        font-size: 20px;
+        color: #FDFDFB;
+}
+
+// section_nav is used at the top of the page for section navigation rather than chapters
+div.section_nav {
+    text-align: center
+}
+
+// this is the same for the navigation button in the header
+a.section_nav {
+    width: 132px; 
+    height: 15px; 
+    margin-bottom: 12px; 
+    line-height: 1em; 
+    padding: 4px 6px 4px 7px; 
+    background: #AF0011; 
+    background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #dddddd)); 
+    background: -webkit-linear-gradient(top, #AF0011 0%, #820011 100%); 
+    background: -o-linear-gradient(top, #AF0011 0%, #820011 100%); 
+    background: -ms-linear-gradient(top, #AF0011 0%, #820011 100%); 
+    background: linear-gradient(to top, #AF0011 0%, #820011 100%); 
+    border-radius: 4px; 
+    border: 1px solid #0D0D0D; 
+    -webkit-box-shadow: inset 0px 1px 1px 0 #e90226; 
+    box-shadow: inset 0px 1px 1px 0 #e90226; 
+    color: #FDFDFB;
+}
+
+a.section_nav:hover {
+    background: #C3001D; 
+    background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #dddddd)); 
+    background: -webkit-linear-gradient(top, #C3001D 0%, #950119 100%); 
+    background: -o-linear-gradient(top, #C3001D 0%, #950119 100%); 
+    background: -ms-linear-gradient(top, #C3001D 0%, #950119 100%); 
+    background: linear-gradient(to top, #C3001D 0%, #950119 100%); 
+    color: #FDFDFB;
+}
+
+// Remove navigation elements from print
+@media print {
+    header ul {
+        display: none;
+    }
+    header li {
+        display: none;
+    }
+    .section_nav {
+        display: none;
+    }
+    a[href]::after {
+        content: " <"attr(href)">";
+        color: #888;
+        background-color: inherit;
+        font-style: italic;
+        size: 80%;
+    } 
+}
