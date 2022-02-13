@@ -5,6 +5,10 @@ title: "Raspberry Pi"
 
 {% include Computing_nav.html %}
 
+  - [Prepare the SD card](./RaspberryPi#prepare-the-sd-card)
+  - [First boot](./RaspberryPi#first-boot)
+  - [Basic setup, adding user and securing SSH](./RaspberryPi#basic-setup-adding-user-and-securing-ssh)
+
 # Raspberry Pi
 
 Tips to install a Raspberry Pi 4 $GB RAM based server. This will server emails and my own cloud services.

@@ -47,6 +47,7 @@ In my work as a senior software developer, as well as privately, I value (unit) 
     - [Packman Repository](./OpenSUSETumbleweed#packman-repository)
     - [C++ / Qt Delevelopment](./OpenSUSETumbleweed#c--qt-delevelopment)
 - [Raspberry Pi](./RaspberryPi#Raspberry-pi)
+    - [Prepare the SD card](./RaspberryPi#prepare-the-sd-card)
     - [First boot](./RaspberryPi#first-boot)
     - [Basic setup, adding user and securing SSH](./RaspberryPi#basic-setup-adding-user-and-securing-ssh)
-    - []()
+
