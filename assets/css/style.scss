@@ -45,22 +45,76 @@ a.section_nav:hover {
     color: #FDFDFB;
 }
 
-// Remove navigation elements from print
+// Move navigation up in medium width to allow for 4 entries
+@media print, screen and (max-width: 960px) {
+    header ul {
+        top: 54px;
+    }
+}
+
 @media print {
+    header {
+        // Hide border. Removing it distroys the layout
+        border: 1px solid #FFFFFF;
+        h2.header {
+            font-size: 36px;
+            color: #000000;
+        }
+        p.header {
+            font-size: 30px;
+            color: #000000;
+        }
+    }
+    // Remove navigation elements from print
     header ul {
         display: none;
     }
     header li {
         display: none;
     }
+    // Make the footer use the space better
+    footer {
+        width: 100%;
+        font-size: 12px;
+        p.header {
+            font-size: 12px;
+            width: 600px;
+        }
+        p {
+            margin: 0 0 0 5px;
+        }
+        a { 
+            display: inline; 
+        } 
+    }
+    // Remove navigation elements from print
     .section_nav {
         display: none;
     }
+    // Adapt font size for print
+    h1 { 
+        font-size: 24px; 
+    }
+    h2 { 
+        font-size: 18px; 
+    }
+    h3 { 
+        font-size: 14px;         
+    }
+    // Make links gray scale and bold
+    a {
+        font-weight: bold;
+        color: #888;
+    }
+    // Show link location in print
     a[href]::after {
         content: " <"attr(href)">";
         color: #888;
         background-color: inherit;
         font-style: italic;
+        font-weight: normal;
         size: 80%;
     } 
+    // General print font size
+    font-size: 12px;
 }
