@@ -35,7 +35,7 @@ git clone https://github.com/wedesoft/anymeal.git
 git rm file
 ```
 
-###Git rename file
+### Git rename file
 ```
 git mv old new
 ```
@@ -55,6 +55,10 @@ git checkout -- file
 git add --all
 git commit -S -m "Comment"
 git push -u origin main
+```
+### Show Git configuration
+```
+git config --list
 ```
 
 ## Setting up GitHub and securing it
@@ -233,6 +237,7 @@ jekyll new .
 cd ../username.github.io/
 cp ../jekyll/Gemfile .
 echo "Gemfile*" > .gitignore
+echo "_site/" >> .gitignore
 
 ```
 In Gemfile
@@ -243,7 +248,6 @@ Now we can get the site running:
 ```
 bundle update
 bundle exec jekyll serve --trace
-echo "_site/" >> .gitignore
 ```
 Point your browser to **http://127.0.0.1:4000/** to see your site. Jekyll tracks changes in the files making up the site and will update automatically when you change the content or add new files. Just refresh your browser to see the changes.
 
@@ -288,6 +292,7 @@ h2.header {
         color: #FDFDFB;
 }
 ```
+suggested font size scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 30, 36, 48, 60, and 72.
 
 ### Links
 
